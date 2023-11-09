@@ -1,14 +1,14 @@
 
 
 #timer {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 100;
   color: #fff;
   text-shadow: 0 0 20px #48c8ff;
 }
 #timer div {
   display: inline-block;
-  min-width: 90px;
+  min-width: 20px;
 }
 #timer div span {
   color: #b1cdf1;

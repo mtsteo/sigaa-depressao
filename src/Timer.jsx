@@ -42,7 +42,7 @@ const Timer = () => {
 
   const blockStyle = {
     display: "inline-block",
-    margin: "10px",
+    margin: "3px",
     padding: "10px",
     textAlign: "center",
     border: "1px solid #ccc",
@@ -57,10 +57,10 @@ const Timer = () => {
       <br></br>
 
       <div id="timer" style={timerStyle}>
-        <div style={blockStyle}>
+        {/* <div style={blockStyle}>
           <div>{years}</div>
           <span>Anos</span>
-        </div>
+        </div> */}
         <div style={blockStyle}>
           <div>{months}</div>
           <span>Meses</span>
@@ -75,11 +75,11 @@ const Timer = () => {
         </div>
         <div style={blockStyle}>
           <div>{minutes}</div>
-          <span>Minutos</span>
+          <span>Min</span>
         </div>
         <div style={blockStyle}>
           <div>{seconds}</div>
-          <span>Segundos</span>
+          <span>Sec</span>
         </div>
       </div>
       <br></br>

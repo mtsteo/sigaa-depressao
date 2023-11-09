@@ -4,13 +4,13 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 50px;
+ 
   background: #0d1a29;
   font-family: "Helvetica Neue", "Open Sans", helvetica, arial, sans-serif;
 }
 
 #root {
-  font-size: 3rem;
+  font-size: 1rem;
   font-weight: 100;
   color: #fff;
   text-shadow: 0 0 20px #48c8ff;
@@ -19,7 +19,7 @@ body, html {
 #root div span {
   color: #b1cdf1;
   display: block;
-  font-size: 1rem;
+  font-size: rem;
   font-weight: 400;
 }
 
