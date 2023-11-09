@@ -1,0 +1,27 @@
+
+
+#timer {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 0 0 20px #48c8ff;
+}
+#timer div {
+  display: inline-block;
+  min-width: 90px;
+}
+#timer div span {
+  color: #b1cdf1;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#since {
+  color: #b1cdf1;
+  display: block;
+  font-size: 0.35rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-shadow: 0 0 10px #48c8ff;
+}
