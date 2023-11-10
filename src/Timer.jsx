@@ -52,7 +52,7 @@ const Timer = () => {
   return (
     <div style={timerStyle}>
       <div>
-        SIGAA ESTÁ:
+        O SIGAA está a
       </div>
       <br></br>
 
@@ -84,7 +84,7 @@ const Timer = () => {
       </div>
       <br></br>
       <div>
-        SEM CAIR!
+        sem cair...
       </div>
     </div>
   );
