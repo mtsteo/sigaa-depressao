@@ -79,7 +79,7 @@ const Timer = () => {
         </div>
         <div style={blockStyle}>
           <div>{seconds}</div>
-          <span>Sec</span>
+          <span>Seg</span>
         </div>
       </div>
       <br></br>
