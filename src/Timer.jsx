@@ -1,9 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./timer.css";
+
 
 const Timer = () => {
-  const [years, setYears] = useState(0);
   const [months, setMonths] = useState(0);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -22,7 +21,6 @@ const Timer = () => {
     const mins = Math.floor(diff / (1000 * 60));
     const secs = Math.floor(diff / 1000);
 
-    setYears(years);
     setMonths(months - years * 12);
     setDays(days - months * 30);
     setHours(hours - days * 24);
@@ -40,53 +38,39 @@ const Timer = () => {
     textAlign: "center",
   };
 
-  const blockStyle = {
-    display: "inline-block",
-    margin: "3px",
-    padding: "10px",
-    textAlign: "center",
-    border: "1px solid #ccc",
-    borderRadius: "5px",
-  };
 
   return (
-    <div style={timerStyle}>
-      <div>
-        O SIGAA está a
-      </div>
-      <br></br>
+    <>
+      <div style={timerStyle}>
+        <div className="info">O SIGAA está a</div>
 
-      <div id="timer" style={timerStyle}>
-        {/* <div style={blockStyle}>
-          <div>{years}</div>
-          <span>Anos</span>
-        </div> */}
-        <div style={blockStyle}>
-          <div>{months}</div>
-          <span>Meses</span>
+        <div id="timer" style={timerStyle}>
+         
+          <div className="blockStyle">
+            <div className="numbers">{months}</div>
+            <span className="spanF">Meses</span>
+          </div>
+          <div className="blockStyle">
+            <div className="numbers">{days}</div>
+            <span className="spanF">Dias</span>
+          </div>
+          <div className="blockStyle">
+            <div className="numbers">{hours}</div>
+            <span className="spanF">Horas</span>
+          </div>
+          <div className="blockStyle">
+            <div className="numbers">{minutes}</div>
+            <span className="spanF">Min</span>
+          </div>
+          <div className="blockStyle">
+            <div className="numbers">{seconds}</div>
+            <span className="spanF">Seg</span>
+          </div>
         </div>
-        <div style={blockStyle}>
-          <div>{days}</div>
-          <span>Dias</span>
-        </div>
-        <div style={blockStyle}>
-          <div>{hours}</div>
-          <span>Horas</span>
-        </div>
-        <div style={blockStyle}>
-          <div>{minutes}</div>
-          <span>Min</span>
-        </div>
-        <div style={blockStyle}>
-          <div>{seconds}</div>
-          <span>Seg</span>
-        </div>
+        <div className="info">sem cair...</div>
       </div>
-      <br></br>
-      <div>
-        sem cair...
-      </div>
-    </div>
+      
+    </>
   );
 };
 

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import Timer from "./Timer";
+import Home from "./pages/home/Home";
+
 
 function App() {
   return (
   <div>
-    <Timer/>
+   <Home/>
   </div>
   );
 }
