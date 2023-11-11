@@ -3,7 +3,8 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
-import qrcode from "../assets/img/qrcode.png";
+import lightning from "../assets/img/lightning.jpg";
+import pix from "../assets/img/pix.jpg";
 
 const style = {
   position: "absolute",
@@ -35,11 +36,11 @@ export default function ModalContr({ isClose, isOpen }) {
           <div style={{display:"flex", justifyContent:"center", marginBottom:"1vw"}}>Ajude a manter esse site Online com qualquer valor!</div>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <div style={{ display: "inline-block", textAlign: "center", marginRight: "3vw" }}>
-              <img src={qrcode} style={{ width: "20vw",  }} />
+              <img src={pix} style={{ width: "20vw",  }} />
               <p style={{ fontSize:"2vh"}}>PIX</p>
             </div>
             <div style={{ display: "inline-block", textAlign: "center", marginLeft: "3vw"  }}>
-              <img src={qrcode} style={{ width: "20vw"}} />
+              <img src={lightning} style={{ width: "20vw"}} />
               <p style={{ fontSize:"2vh" }}>Sats BTC via lightning</p>
             </div>
           </div>
