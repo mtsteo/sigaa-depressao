@@ -25,14 +25,14 @@ function Home() {
               <div className="glitch-wrapper">
                 <div>
                   <Timer />
-                  <ModalContr isOpen={Open} isClose={() => setIsOpen(false)}/>
+                  {/* <ModalContr isOpen={Open} isClose={() => setIsOpen(false)}/>
                   <Button
                     variant="outlined"
                     sx={{ color: "#b1cdf1" }}
                     onClick={() => setIsOpen(true)}
                   >
                     Contribuir com o projeto
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
               <p className="hero-subtitle"></p>
