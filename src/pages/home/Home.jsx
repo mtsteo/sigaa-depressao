@@ -3,6 +3,7 @@ import { useState } from "react";
 import Timer from "../../Timer";
 import ModalContr from "../../components/ModalContr";
 import Button from "@mui/material/Button";
+import Fake from "../../Fake";
 
 function Home() {
   const [Open, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ function Home() {
             <div className="container">
               <div className="glitch-wrapper">
                 <div>
-                  <Timer />
+                  <Fake/>
                   {/* <ModalContr isOpen={Open} isClose={() => setIsOpen(false)}/>
                   <Button
                     variant="outlined"
