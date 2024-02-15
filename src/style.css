@@ -258,9 +258,9 @@ body {
 .hero {
   height: 100vh;
   position: relative;
-  color: #b1cdf1;
+  color: #ffffff;
   font-size: 2rem;
-  text-shadow: 0 0 20px #48c8ff
+
 }
 
 .hero .hero-content {
